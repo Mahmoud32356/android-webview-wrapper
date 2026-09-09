@@ -39,4 +39,22 @@
     <string name="cancel">Cancel</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
+        <!-- AdMob Application ID -->
+    <string name="admob_app_id">ca-app-pub-7293684166978355~9579740993</string>
+
+    <!-- AdMob Banner Unit ID -->
+    <string name="admob_banner_id">ca-app-pub-7293684166978355/6626274599</string>
+
+    <!-- AdMob Interstitial Unit ID -->
+    <string name="admob_interstitial_id">ca-app-pub-7293684166978355/5050680493</string>
+
+    <!-- AdMob Rewarded Unit ID -->
+    <string name="admob_rewarded_id">ca-app-pub-7293684166978355/8606782127</string>
+
+    <!-- AdMob App Open Unit ID -->
+    <string name="admob_app_open_id">ca-app-pub-7293684166978355/5313192926</string>
+
+    <!-- AdMob Native Unit ID -->
+    <string name="admob_native_id">ca-app-pub-7293684166978355/6172190478</string>
+
 </resources>
