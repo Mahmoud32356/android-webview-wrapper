@@ -9,6 +9,9 @@ import android.os.Build;
 import androidx.annotation.NonNull;
 import androidx.work.Configuration;
 import androidx.work.WorkManager;
+import com.google.android.gms.ads.MobileAds;
+import com.google.android.gms.ads.initialization.InitializationStatus;
+import com.google.android.gms.ads.initialization.OnInitializationCompleteListener;
 
 import com.monstertechno.webview.core.WebViewManager;
 import com.monstertechno.webview.utils.NotificationChannels;
@@ -25,7 +28,13 @@ public class WebViewApplication extends Application implements Configuration.Pro
     public void onCreate() {
         super.onCreate();
         instance = this;
-        
+        MobileAds.initialize(this, new OnInitializationCompleteListener() {
+    @Override
+    public void onInitializationComplete(InitializationStatus initializationStatus) {
+        // تم تهيئة أدموب بنجاح
+    }
+});
+
         initializeWebView();
         createNotificationChannels();
         initializeWorkManager();
