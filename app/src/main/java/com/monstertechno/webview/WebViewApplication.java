@@ -35,7 +35,8 @@ public class WebViewApplication extends Application implements Configuration.Pro
         MobileAds.initialize(this, new OnInitializationCompleteListener() {
     @Override
     public void onInitializationComplete(InitializationStatus initializationStatus) {
-        // تم تهيئة أدموب بنجاح
+        // تم تهيئة أدمprivate InterstitialAd mInterstitialAd;
+        وب بنجاح
     }
 });
 
