@@ -3,11 +3,11 @@ plugins {
 }
 
 android {
-    namespace = "com.monstertechno.webview"
+    namespace = "​com.almadaah.app"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.monstertechno.webview"
+        applicationId = "​com.almadaah.app"
         minSdk = 29
         targetSdk = 36
         versionCode = 1
