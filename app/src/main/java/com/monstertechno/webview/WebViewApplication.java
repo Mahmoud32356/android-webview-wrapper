@@ -43,7 +43,10 @@ public class WebViewApplication extends Application implements Configuration.Pro
     private void initializeWebView() {
         WebViewManager.initialize(this);
     }
-
+AdView mAdView = findViewById(R.id.adView);
+AdRequest adRequest = new AdRequest.Builder().build();
+mAdView.loadAd(adRequest);
+    
     private void createNotificationChannels() {
         NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
