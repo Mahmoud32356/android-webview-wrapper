@@ -78,6 +78,7 @@ dependencies {
     // Image loading
     implementation(libs.glide)
     annotationProcessor(libs.glide.compiler)
+implementation("com.google.android.gms:play-services-ads:23.0.0")
 
     // Testing
     testImplementation(libs.junit)
