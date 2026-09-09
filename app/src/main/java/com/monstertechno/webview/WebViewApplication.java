@@ -51,7 +51,16 @@ public class WebViewApplication extends Application implements Configuration.Pro
 AdView mAdView = findViewById(R.id.adView);
 AdRequest adRequest = new AdRequest.Builder().build();
 mAdView.loadAd(adRequest);
-    
+ AdRequest adRequest = new AdRequest.Builder().build();
+
+InterstitialAd.load(this, getString(R.string.admob_interstitial_id), adRequest,
+    new InterstitialAdLoadCallback() {
+        @Override
+        public void onAdLoaded(@NonNull InterstitialAd interstitialAd) {
+            mInterstitialAd = interstitialAd;
+        }
+    });
+
     private void createNotificationChannels() {
         NotificationManager notificationManager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
 
